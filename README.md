@@ -9,4 +9,8 @@ Great thanks to:
 
 This project wouldn't been possible without their help.  
 
+### Technologies
+* [Go 1.13](https://golang.org/doc/go1.13)
+* [Semantic UI 2.4](https://semantic-ui.com/introduction/new.html#/twoFour)
+
 Built with <span style="color:transparent; text-shadow: 0 0 0 yellow;">♥</span> by Wash
