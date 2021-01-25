@@ -13,4 +13,14 @@ This project wouldn't been possible without their help.
 * [Go 1.13](https://golang.org/doc/go1.13)
 * [Semantic UI 2.4](https://semantic-ui.com/introduction/new.html#/twoFour)
 
+### Setup
+
+* Install semantic dependencies
+```
+cd go-pokedex
+npm install
+cd semantic
+gulp build
+```
+
 Built with <span style="color:transparent; text-shadow: 0 0 0 yellow;">♥</span> by Wash

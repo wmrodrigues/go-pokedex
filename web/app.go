@@ -13,7 +13,11 @@ type App struct {
 func (a *App) RegisterRoutes() {
 	a.Router = mux.NewRouter()
 
- 	//http.Handle("/semantic/", http.StripPrefix("/semantic/", http.FileServer(http.Dir("./semantic"))))
+	// static file handlers
 	a.Router.PathPrefix("/semantic/").Handler(http.StripPrefix("/semantic/", http.FileServer(http.Dir("./semantic"))))
+	a.Router.PathPrefix("/assets/").Handler(http.StripPrefix("/assets/", http.FileServer(http.Dir("./assets"))))
+
+	// route handlers
 	a.Router.Handle("/heartbeat", http.HandlerFunc(controllers.HeartbeatIndexHandler)).Methods(http.MethodGet)
+	a.Router.Handle("/home", http.HandlerFunc(controllers.HomeIndexHandler)).Methods(http.MethodGet)
 }
