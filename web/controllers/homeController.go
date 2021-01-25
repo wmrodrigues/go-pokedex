@@ -5,8 +5,8 @@ import (
 	"net/http"
 )
 
-// HeartbeatIndexHandler
-func HeartbeatIndexHandler(w http.ResponseWriter, r *http.Request) {
+// HomeIndexHandler
+func HomeIndexHandler(w http.ResponseWriter, r *http.Request) {
 	var err error
 	err = internalHttp.Render("/web/templates/heartbeat/index.html", w)
 

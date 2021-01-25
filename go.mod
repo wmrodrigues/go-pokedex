@@ -1,4 +1,4 @@
-module github.com/wmrodrigues
+module github.com/wmrodrigues/go-pokedex
 
 go 1.13
 
